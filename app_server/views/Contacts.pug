@@ -1,27 +1,21 @@
-doctype html
-html
-  head
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title= title
-    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
-    link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    nav.navbar.fixed-top.navbar-toggleable-md.navbar-inverse 
-      .container
-        button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarMain')
-          span.navbar-toggler-icon
-        a.navbar-brand(href='/ ') TourWind 
-        #navbarMain.navbar-collapse.collapse
-          ul.navbar-nav.mr-auto
-            li.nav-item
-              a.nav-link(href='/about/') contacts 
-    .container
-      block content
-      footer
+extends layout
+block content
+    .row.banner
+        .col-12
+            h1= title
         .row
-          .col-12
-            small &copy; 
-    script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js')
-    script(src='/javascripts/bootstrap.min.js')
+            .col-12.col-lg-12
+                h2
+                |CONTACT INFORMATION
+                p
+                |21EG107B26 AKSHITA  
+                | <br /><br /> 
+                |EMAIL: 21eg107b26@anurag.edu.in
+                | <br /><br /> 
+                |21EG107B28 SAI KIRAN 
+                | <br /><br /> 
+                |EMAIL: 21eg107b28@anurag.edu.in
+                | <br /><br /> 
+                |22EG507B03 MANOJ
+                | <br /><br />        
+                |EMAIL: 22eg507b03@anurag.edu.in
