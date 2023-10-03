@@ -16,24 +16,55 @@ html
     link(rel="stylesheet", href="stylesheets/utility.css")
     link(rel="stylesheet", href="stylesheets/style.css")
     link(rel="stylesheet", href="stylesheets/responsive.css")
-  body
-    nav.navbar
-      div.container.flex
-        a.site-brand(href="/") Tour<span>Wind</span>
-        button#navbar-show-btn.flex(type="button")
-          i.fas.fa-bars
-        div#navbar-collapse
-          button#navbar-close-btn.flex(type="button")
-            i.fas.fa-times
-          ul.navbar-nav
-            li.nav-item
-              a.nav-link(href="/") Home
-            li.nav-item
-              a.nav-link(href="/gallery/") Gallery
-            li.nav-item
-              a.nav-link(href="/about/") About
-            li.nav-item
-              a.nav-link(href="/Contacts/") Contact
+html 
+  head 
+    style. 
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        text-align: center;
+        color: White;
+        font-size: 30px;
+      }
+      div{
+        font-size: 25px;
+      }
+      body{
+        //- background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .navbar{
+        gap: 20px;
+        margin: 0 0 0 50%;
+      }
+      a{
+        margin: 15px 0 15px 10px;
+        text-decoration: none;
+        color:black;
+
+      }
+      .navbarsec{
+        padding: 0 0 0 10%;
+        display:flex;
+        background-color: teal ;
+        padding:15px;
+      }
+      .p{
+        text-size : 500px;
+      }
+  body 
+    section.navbarsec
+      h1 TourWind
+      div.navbar
+        a(href="/") Home
+        a(href="/about") About
+        a(href="/Contacts") Contacts
+        a(href='/gallery') Gallery 
+
     header.flex
       div.container
         div.header-title
@@ -109,20 +140,20 @@ html
                         |  maldives
                     div
                         p.text With its stunning islands, mesmerizing beaches, and turquoise waters, Maldives is famous for its exciting water activities.
+                       
                     .subscribe-form.footer-item
-    h2 Subscribe for Newsletter!
+                     .footer-item
+                    h2 Subscribe for Newsletter!
     form.flex
         input.form-control(type="email", placeholder="Enter Email")
         input.btn(type="submit", value="Subscribe")
+        .container
+  block content
+    footer
+      .row
+        .col-12
 
 
 
         
-    .container
-      block content
-      footer
-        .row
-          .col-12
-    script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js')
-    script(src='/javascripts/bootstrap.min.js')
+
