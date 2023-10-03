@@ -16,54 +16,36 @@ html
     link(rel="stylesheet", href="stylesheets/utility.css")
     link(rel="stylesheet", href="stylesheets/style.css")
     link(rel="stylesheet", href="stylesheets/responsive.css")
-html 
-  head 
-    style. 
-      *{
-        margin: 0;
-        padding: 0;
-      }
-      h1 {
-        text-align: center;
-        color: White;
-        font-size: 30px;
-      }
-      div{
-        font-size: 25px;
-      }
-      body{
-        //- background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
-      .navbar{
-        gap: 20px;
-        margin: 0 0 0 50%;
-      }
-      a{
-        margin: 15px 0 15px 10px;
-        text-decoration: none;
-        color:black;
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    title TourWind
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    // font awesome cdn
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css", integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==", crossorigin="anonymous", referrerpolicy="no-referrer")
+    // Bootstrap CSS
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
 
-      }
-      .navbarsec{
-        padding: 0 0 0 10%;
-        display:flex;
-        background-color: teal ;
-        padding:15px;
-      }
-      .p{
-        text-size : 500px;
-      }
-  body 
-    section.navbarsec
-      h1 TourWind
-      div.navbar
-        a(href="/") Home
-        a(href="/about") About
-        a(href="/Contacts") Contacts
-        a(href='/gallery') Gallery 
+  body
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      div.container
+        a.navbar-brand(href="/")
+          | Tour
+          span Wind
+        button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        div#navbarNav.collapse.navbar-collapse
+          ul.navbar-nav
+            li.nav-item
+              a.nav-link(href="/") Home
+            li.nav-item
+              a.nav-link(href="/gallery/") Gallery
+            li.nav-item
+              a.nav-link(href="/about/") About
+            li.nav-item
+              a.nav-link(href="/Contact/") Contact
 
     header.flex
       div.container
