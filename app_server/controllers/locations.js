@@ -15,12 +15,34 @@ const gallery = function(req, res){
 const about = (req, res) => {  
   res.render('about', { title: 'about' }); 
 };
+const india = (req, res) => {  
+  res.render('india', { title: 'india' }); 
+};
+const australia = (req, res) => {  
+  res.render('australia', { title: 'australia' }); 
+};
+const germany = (req, res) => {  
+  res.render('germany', { title: 'germany' }); 
+};
+const italy = (req, res) => {  
+  res.render('italy', { title: 'italy' }); 
+};
+const thailand = (req, res) => {  
+  res.render('thailand', { title: 'thailand' }); 
+};
 
 module.exports = {
   Homepage,
   Contacts,
   gallery,
-  about
+  about,
+  india,
+  australia,
+  germany,
+  italy,
+  thailand
+
+  
 
 };
   

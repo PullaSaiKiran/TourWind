@@ -10,5 +10,10 @@ router.get('/gallery', ctrlLocations.gallery);
 
 /* Other pages */
 router.get('/about', ctrlLocations.about);
+router.get('/india', ctrlLocations.india);
+router.get('/australia', ctrlLocations.australia);
+router.get('/germany', ctrlLocations.germany);
+router.get('/italy', ctrlLocations.italy);
+router.get('/thailand', ctrlLocations.thailand);
 
 module.exports = router;
