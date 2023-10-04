@@ -1,3 +1,4 @@
+doctype html
 html
   head
     meta(charset="utf-8")
@@ -15,15 +16,27 @@ html
     link(rel="stylesheet", href="stylesheets/utility.css")
     link(rel="stylesheet", href="stylesheets/style.css")
     link(rel="stylesheet", href="stylesheets/responsive.css")
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    title TourWind
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    // font awesome cdn
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css", integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==", crossorigin="anonymous", referrerpolicy="no-referrer")
+    // Bootstrap CSS
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+
   body
-    nav.navbar
-      div.container.flex
-        a.site-brand(href="/") Tour<span>Wind</span>
-        button#navbar-show-btn.flex(type="button")
-          i.fas.fa-bars
-        div#navbar-collapse
-          button#navbar-close-btn.flex(type="button")
-            i.fas.fa-times
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      div.container
+        a.navbar-brand(href="/")
+          | Tour
+          span Wind
+        button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        div#navbarNav.collapse.navbar-collapse
           ul.navbar-nav
             li.nav-item
               a.nav-link(href="/") Home
@@ -34,216 +47,71 @@ html
             li.nav-item
               a.nav-link(href="/Contacts/") Contact
               header.flex.header-sm
-            div.container
-            div.header-title
-           h1 Gallery
-      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus rerum maxime enim odit illum in molestias beatae doloremque, ratione optio .
 
-# header
+    header.flex
+      div.container
+        div.header-title
+          h1 Gallery 
+        div.header-form
+          form.flex
 
-# gallery section
-             div#gallery.py-4
-             div.container
-             div.gallery-row
-            div.gallery-item.shadow
-               img(src="images/gallery-1.jpg", alt="gallery img")
-              span.zoom-icon
-          i.fas.fa-search-plus
-           div.gallery-item.shadow
-        img(src="images/gallery-2.jpg", alt="gallery img")
-        span.zoom-icon
-          i.fas.fa-search-plus
-      div.gallery-item.shadow
-        img(src="images/gallery-3.jpg", alt="gallery img")
-        span.zoom-icon
-          i.fas.fa-search-plus
-      div.gallery-item.shadow
-        img(src="images/gallery-4.jpg", alt="gallery img")
-        span.zoom-icon
-          i.fas.fa-search-plus
-      div.gallery-item.shadow
-        img(src="images/gallery-5.jpg", alt="gallery img")
-        span.zoom-icon
-          i.fas.fa-search-plus
-      div.gallery-item.shadow
-        img(src="images/gallery-6.jpg", alt="gallery img")
-        span.zoom-icon
-          i.fas.fa-search-plus
-      div.gallery-item.shadow
-        img(src="images/gallery-7.jpg", alt="gallery img")
-        span.zoom-icon
-          i.fas.fa-search-plus
-      div.gallery-item.shadow
-        img(src="images/gallery-8.jpg", alt="gallery img")
-        span.zoom-icon
-          i.fas.fa-search-plus
-      div.gallery-item.shadow
-        img(src="images/gallery-9.jpg", alt="gallery img")
-        span.zoom-icon
-          i.fas.fa-search-plus
+  body
+    nav.navbar.fixed-top.navbar-toggleable-md.navbar-inverse
+      .container
+        button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarMain')
+          span.navbar-toggler-icon
+ 
+        section#featured.py-4
+    .container
+        .title-wrap
 
-# end of gallery section
+        .featured-row
+            .featured-item.my-2.shadow
+                img(src="https://c4.wallpaperflare.com/wallpaper/459/667/799/urban-austria-hallstatt-snow-wallpaper-preview.jpg", alt="featured place")
+                .featured-item-content
+                    
+                    div
+                        p.text 
 
-# img modal
-div#img-modal-box
-  div#img-modal
-    button#modal-close-btn.flex(type="button")
-      i.fas.fa-times
-    button#prev-btn.flex(type="button")
-      i.fas.fa-chevron-left
-    button#next-btn.flex(type="button")
-      i.fas.fa-chevron-right
-    img(src="images/gallery-1.jpg")
+            .featured-item.my-2.shadow
+                img(src="https://c4.wallpaperflare.com/wallpaper/773/547/640/zermatt-switzerland-alps-snow-wallpaper-preview.jpg", alt="featured place")
+                .featured-item-content
 
-# end of img modal
+                    div
+                        p.text 
 
-# popular places section
-section#popular.py-4
-  div.title-wrap
-    span.sm-title know about some coo destination
-    h2.lg-title Popular Places
+            .featured-item.my-2.shadow
+                img(src="https://c4.wallpaperflare.com/wallpaper/246/582/347/evening-europe-tower-bridge-london-wallpaper-preview.jpg", alt="featured place")
+                .featured-item-content
 
-  div.popular-row
-    div.popular-item.shadow
-      img(src="images/popular-1.jpg", alt="")
-      div
-        span Eiffel Tower, Paris
-        ul.rating.flex
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star-half-alt
-          li &nbsp;400 reviews
-        p.text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quia!
+                    div
+                        p.text 
 
-    div.popular-item.shadow
-      img(src="images/popular-2.jpg", alt="")
-      div
-        span Machu Picchu, Peru
-        ul.rating.flex
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star-half-alt
-          li &nbsp;400 reviews
-        p.text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quia!
+            .featured-item.my-2.shadow
+                img(src="https://c4.wallpaperflare.com/wallpaper/132/818/377/eiffel-tower-cityscape-city-landmark-wallpaper-preview.jpg", alt="featured place")
+                .featured-item-content
+   
+                    div
+                        p.text
 
-    div.popular-item.shadow
-      img(src="images/popular-3.jpg", alt="")
-      div
-        span Acropolis, Athens
-        ul.rating.flex
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star-half-alt
-          li &nbsp;400 reviews
-        p.text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quia!
+            .featured-item.my-2.shadow
+                img(src="https://c4.wallpaperflare.com/wallpaper/977/548/906/beach-water-pier-tropical-wallpaper-preview.jpg", alt="featured place")
+                .featured-item-content
 
-    div.popular-item.shadow
-      img(src="images/popular-4.jpg", alt="")
-      div
-        span Bali, Indonesia
-        ul.rating.flex
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star-half-alt
-          li &nbsp;400 reviews
-        p.text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quia!
+                    div
+                        p.text 
+            .featured-item.my-2.shadow
+                img(src="https://c4.wallpaperflare.com/wallpaper/265/733/93/architecture-city-travel-europe-wallpaper-preview.jpg", alt="featured place")
+                .featured-item-content
 
-    div.popular-item.shadow
-      img(src="images/popular-5.jpg", alt="")
-      div
-        span Dubai, United Arab Emirates
-        ul.rating.flex
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star-half-alt
-          li &nbsp;400 reviews
-        p.text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quia!
+                    div 
+                        p.text 
+            .featured-item.my-2.shadow
+                img(src="https://c4.wallpaperflare.com/wallpaper/433/133/112/water-orlando-florida-usa-wallpaper-preview.jpg", alt="featured place")
+                .featured-item-content
 
-    div.popular-item.shadow
-      img(src="images/popular-6.jpg", alt="")
-      div
-        span Bhutan
-        ul.rating.flex
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star-half-alt
-          li &nbsp;400 reviews
-        p.text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quia!
+                    div 
+                        p.text 
 
-    div.popular-item.shadow
-      img(src="images/popular-7.jpg", alt="")
-      div
-        span Havana, Cuba
-        ul.rating.flex
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star-half-alt
-          li &nbsp;400 reviews
-        p.text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quia!
-
-    div.popular-item.shadow
-      img(src="images/popular-8.jpg", alt="")
-      div
-        span Moskva, Russia
-        ul.rating.flex
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star
-          li
-            i.fas.fa-star-half-alt
-          li &nbsp;400 reviews
-        p.text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quia!
+        
+              

@@ -1,8 +1,136 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    title TourWind
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    // font awesome cdn
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css", integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==", crossorigin="anonymous", referrerpolicy="no-referrer")
+    // fonts
+    link(rel="stylesheet", href="webfonts/fonts.css")
+    // normalize css
+    link(rel="stylesheet", href="stylesheets/normalize.css")
+    // custom css
+    link(rel="stylesheet", href="stylesheets/utility.css")
+    link(rel="stylesheet", href="stylesheets/style.css")
+    link(rel="stylesheet", href="stylesheets/responsive.css")
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    title TourWind
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    // font awesome cdn
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css", integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==", crossorigin="anonymous", referrerpolicy="no-referrer")
+    // Bootstrap CSS
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
 
-extends layout
+  body
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      div.container
+        a.navbar-brand(href="/")
+          | Tour
+          span Wind
+        button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        div#navbarNav.collapse.navbar-collapse
+          ul.navbar-nav
+            li.nav-item
+              a.nav-link(href="/") Home
+            li.nav-item
+              a.nav-link(href="/gallery/") Gallery
+            li.nav-item
+              a.nav-link(href="/about/") About
+            li.nav-item
+              a.nav-link(href="/Contacts/") Contact
+
+    header.flex
+      div.container
+        div.header-title
+          h1 WELCOME TO TOUR WIND
+          p “Exploring new places makes one modest. You see what a tiny place you occupy in the world.”
+  body
+    nav.navbar.fixed-top.navbar-toggleable-md.navbar-inverse
+      .container
+        button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarMain')
+          span.navbar-toggler-icon
+ 
+        section#featured.py-4
+    .container
+        .title-wrap
+            span.sm-title know about some places before your explore
+            h2.lg-title featured places
+
+        .featured-row
+            .featured-item.my-2.shadow
+                img(src="https://images.unsplash.com/photo-1576487248805-cf45f6bcc67f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW5kaWElMjB0b3VyaXNtfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60", alt="featured place")
+                .featured-item-content
+                    span
+                        i.fas.fa-map-marker-alt
+                        | India 
+                    div
+                        p.text India is one of Asia's most popular tourist destinations.
+
+            .featured-item.my-2.shadow
+                img(src="https://images.unsplash.com/photo-1624138784614-87fd1b6528f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXVzdHJhbGlhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60", alt="featured place")
+                .featured-item-content
+                    span
+                        i.fas.fa-map-marker-alt
+                        |  Australia
+                    div
+                        p.text The beauty, variety and pristine quality of Australia's natural landscapes, from exotic coastal areas to lush rainforests and red deserts, make Australia a desirable travel destination.
+
+            .featured-item.my-2.shadow
+                img(src="https://images.unsplash.com/photo-1501952476817-d7ae22e8ee4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2VybWFueXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60", alt="featured place")
+                .featured-item-content
+                    span
+                        i.fas.fa-map-marker-alt
+                        | Germany
+                    div
+                        p.text It has extremely favorable vacation conditions, such as magnificent mountain ranges, lake and river sceneries.
+
+            .featured-item.my-2.shadow
+                img(src="https://images.unsplash.com/photo-1528181304800-259b08848526?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGhhaWxhbmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60", alt="featured place")
+                .featured-item-content
+                    span
+                        i.fas.fa-map-marker-alt
+                        | thailand
+                    div
+                        p.text Thailand recorded a total of 428,000 tourists in 2021, ranking 110th in the world in absolute terms.
+
+            .featured-item.my-2.shadow
+                img(src="https://images.unsplash.com/photo-1646865043257-3767188963f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aXRsYXl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60", alt="featured place")
+                .featured-item-content
+                    span
+                        i.fas.fa-map-marker-alt
+                        |  Italy
+                    div
+                        p.text Italy is not only a popular tourist destination, according to Globus, it is the most sought-after and desired tourist destination in the world
+            .featured-item.my-2.shadow
+                img(src="https://plus.unsplash.com/premium_photo-1666497934040-ec832d302f13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG1hbGRpdmVzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60", alt="featured place")
+                .featured-item-content
+                    span
+                        i.fas.fa-map-marker-alt
+                        |  maldives
+                    div
+                        p.text With its stunning islands, mesmerizing beaches, and turquoise waters, Maldives is famous for its exciting water activities.
+
+  block content
+    footer
+      .row
+        .col-12
+
+
+
+        
+
+
 
 block content
   .row.banner
     .col-12
       h1 
-        small &nbsp;
+        small &nbsp;@team 19

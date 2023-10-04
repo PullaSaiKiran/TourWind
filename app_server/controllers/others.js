@@ -1,10 +1,6 @@
 const about = (req, res) => {  
-  res.render('generic-text', { title: 'about' });   
+  res.render('about', { title: 'about' });     
 };
-const Contacts = (req, res) => {  
-  res.render('Contacts', { title: 'Contacts' });   
-};
-module.exports = {
-  about,
-  Contacts
+module.exports={
+ about
 };

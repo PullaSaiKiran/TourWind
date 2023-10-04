@@ -10,11 +10,17 @@ const Contacts = function(req, res){
 
 /* GET 'Add review' page */
 const gallery = function(req, res){
-  res.render('Gallery', { title: 'gallery' });
+  res.render('gallery', { title: 'gallery' });
+};
+const about = (req, res) => {  
+  res.render('about', { title: 'about' }); 
 };
 
 module.exports = {
   Homepage,
   Contacts,
-  gallery
+  gallery,
+  about
+
 };
+  

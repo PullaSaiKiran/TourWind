@@ -9,6 +9,6 @@ router.get('/Contacts', ctrlLocations.Contacts);
 router.get('/gallery', ctrlLocations.gallery);
 
 /* Other pages */
-router.get('/about', ctrlOthers.about);
+router.get('/about', ctrlLocations.about);
 
 module.exports = router;
