@@ -15,5 +15,6 @@ router.get('/australia', ctrlLocations.australia);
 router.get('/germany', ctrlLocations.germany);
 router.get('/italy', ctrlLocations.italy);
 router.get('/thailand', ctrlLocations.thailand);
+router.get('/login', ctrlLocations.login);
 
 module.exports = router;

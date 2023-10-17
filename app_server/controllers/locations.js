@@ -30,6 +30,9 @@ const italy = (req, res) => {
 const thailand = (req, res) => {  
   res.render('thailand', { title: 'thailand' }); 
 };
+const login = (req, res) => {  
+  res.render('login', { title: 'login' }); 
+};
 
 module.exports = {
   Homepage,
@@ -40,7 +43,8 @@ module.exports = {
   australia,
   germany,
   italy,
-  thailand
+  thailand,
+  login
 
   
 
